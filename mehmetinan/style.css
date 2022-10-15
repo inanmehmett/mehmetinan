@@ -1,0 +1,495 @@
+                        ********css sıfırlama**************************** html,
+                        body,
+                        div,
+                        span,
+                        applet,
+                        object,
+                        iframe,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        blockquote,
+                        pre,
+                        a,
+                        abbr,
+                        acronym,
+                        address,
+                        big,
+                        cite,
+                        code,
+                        del,
+                        dfn,
+                        img,
+                        ins,
+                        kbd,
+                        q,
+                        s,
+                        samp,
+                        small,
+                        strike,
+                        sub,
+                        sup,
+                        tt,
+                        var,
+                        dl,
+                        dt,
+                        dd,
+                        ol,
+                        ul,
+                        li,
+                        fieldset,
+                        form,
+                        label,
+                        legend,
+                        input,
+                        select,
+                        textarea,
+                        button,
+                        table,
+                        caption,
+                        tbody,
+                        tfoot,
+                        thead,
+                        tr,
+                        th,
+                        td,
+                        article,
+                        aside,
+                        canvas,
+                        details,
+                        embed,
+                        figure,
+                        figcaption,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        output,
+                        ruby,
+                        section,
+                        summary,
+                        time,
+                        mark,
+                        audio,
+                        video {
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            vertical-align: baseline;
+                        }
+                        
+                        article,
+                        aside,
+                        details,
+                        figcaption,
+                        figure,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        section {
+                            display: block;
+                        }
+                        
+                        body {
+                            line-height: 1;
+                        }
+                        
+                        ol,
+                        ul {
+                            list-style: none;
+                        }
+                        
+                        blockquote,
+                        q {
+                            quotes: none;
+                        }
+                        
+                        blockquote:before,
+                        blockquote:after,
+                        q:before,
+                        q:after {
+                            content: '';
+                            content: none;
+                        }
+                        
+                        table {
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        a img,
+                         :link img,
+                         :visited img {
+                            border: 0;
+                        }
+                        
+                         :focus {
+                            outline: 0;
+                        }
+                        
+                        .clear {
+                            clear: both;
+                        }
+                        /* RESPONSIVE DESIGN CODE */
+                        
+                        @media only screen and (min-width: 600px) {
+                            .a-nav {
+                                display: none;
+                            }
+                            .sidebar-1 {
+                                display: visible
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 600px) {
+                            .a-nav {
+                                display: visible;
+                            }
+                            .sidebar-1 {
+                                display: none;
+                            }
+                        }
+                        /* INITIAL AREA STYLİNG CODES */
+                        
+                        body {
+                            background-color: #000;
+                            font-family: Montserrat, sans-serif;
+                            max-width: 1320px;
+                            margin: 30px auto;
+                            line-height: 1.4;
+                        }
+                        
+                        .content {
+                            max-width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                        }
+                        /* NAV AREA STYLİNG CODES */
+                        
+                        .nav {
+                            display: flex;
+                        }
+                        
+                        .a-nav {
+                            list-style: none;
+                            width: 100%;
+                            text-align: center;
+                            text-decoration: none;
+                            color: #fff;
+                            margin: auto;
+                            font-size: 20px;
+                        }
+                        
+                        .a-nav:hover {
+                            background-color: gray;
+                            color: #fff;
+                        }
+                        /* SIDEBAR AREA STYLİNG CODES */
+                        
+                        .sidebar {
+                            display: flex;
+                            flex-direction: column;
+                            width: 80%;
+                            gap: 30px;
+                            color: white;
+                            background-color: rgb(34, 32, 32);
+                            box-sizing: border-box;
+                            text-align: center;
+                            font-size: 15px;
+                            padding-top: 50px;
+                        }
+                        
+                        .sidebar-1:hover {
+                            background-color: #000;
+                        }
+                        
+                        .sidebar-1 {
+                            padding-top: 10px;
+                            color: #fff;
+                        }
+                        
+                        .img-responsive {
+                            width: 150px;
+                            margin-top: 40px;
+                        }
+                        
+                        .sidebar-1>img {
+                            width: 40px;
+                        }
+                        /* CONTAINER AREA STYLİNG CODES */
+                        
+                        .container {
+                            text-align: center;
+                            color: #fff;
+                        }
+                        
+                        .presentation {
+                            font-size: 25px;
+                        }
+                        
+                        .presentation h3 {
+                            font-size: 18px
+                        }
+                        
+                        .photos {
+                            height: auto;
+                            max-width: 70%;
+                            opacity: 0.9;
+                        }
+                        
+                        .h1-about-content,
+                        .about-content {
+                            text-align: left;
+                            margin: 30px 8px;
+                            font-size: 25px;
+                        }
+                        
+                        .h1-about-content {
+                            text-decoration: underline 2px solid;
+                            text-underline-position: under;
+                            color: #fff;
+                        }
+                        /* MY SKILL AREA STYLİNG CODES */
+                        
+                        .skill {
+                            margin-top: 0;
+                            width: 100%;
+                            height: 35px;
+                            background-color: #fff;
+                        }
+                        
+                        .web-design {
+                            width: 90%;
+                            height: 35px;
+                            background-color: gray;
+                        }
+                        
+                        .frontend {
+                            width: 80%;
+                            height: 35px;
+                            background-color: gray;
+                        }
+                        
+                        .backend {
+                            width: 40%;
+                            height: 35px;
+                            background-color: gray;
+                        }
+                        
+                        .resume {
+                            margin: 50px 0;
+                            display: grid;
+                            font-size: 15px;
+                            border: 1px solid;
+                            background-color: #fff;
+                        }
+                        
+                        .resume>div {
+                            text-align: center;
+                            margin: 10px auto;
+                            background-color: #fff;
+                            color: black;
+                        }
+                        /* PRİCİNG AREA STYLİNG CODES */
+                        
+                        .pricing-area {
+                            margin: 5px auto;
+                            color: black;
+                            border-bottom: 1px solid
+                        }
+                        
+                        .pro,
+                        .basic {
+                            background-color: #fff;
+                            margin: 10px 10px;
+                            width: 100%;
+                            text-align: center;
+                            opacity: 0.5;
+                            font-size: 15px;
+                        }
+                        
+                        .pro:hover,
+                        .basic:hover {
+                            opacity: 1;
+                        }
+                        
+                        .basic-title,
+                        .pro-title {
+                            background-color: #aaa;
+                            width: 100%;
+                            height: auto;
+                            padding-top: 5px;
+                        }
+                        
+                        .pro>div,
+                        .basic>div {
+                            border-bottom: 1px solid rgb(173, 168, 168);
+                        }
+                        
+                        .signup-div {
+                            background-color: rgb(214, 210, 210);
+                            height: 100px;
+                            padding-top: 25px;
+                            box-sizing: border-box;
+                            font-size: 13px;
+                        }
+                        
+                        .signup-button {
+                            background-color: rgb(228, 225, 225);
+                            width: 11%;
+                            height: 70%;
+                            margin: auto;
+                            padding-top: 20px;
+                            box-sizing: border-box;
+                        }
+                        
+                        .signup-button2 {
+                            background-color: rgb(228, 225, 225);
+                            width: 11%;
+                            height: 70%;
+                            margin: auto;
+                            padding-top: 5px;
+                            box-sizing: border-box;
+                        }
+                        
+                        .signup-button:hover,
+                        .signup-button2:hover {
+                            background-color: rgb(100, 97, 97);
+                            cursor: pointer;
+                        }
+                        /* Reputation Area Styling Codes */
+                        
+                        .reputation-area {
+                            margin: 40px auto;
+                        }
+                        
+                        .my-reputation {
+                            box-sizing: border-box;
+                            display: grid;
+                            grid-template-columns: 20% 20% 20% 20% 20%;
+                            grid-template-rows: 20% 20% 20% 20% 20%;
+                            font-size: 15px;
+                            gap: 5px 10px;
+                        }
+                        
+                        .reputation-photo {
+                            width: 50%;
+                            grid-column: 1;
+                            grid-row: 1/ span2;
+                            border-radius: 50%;
+                            margin: 10px auto;
+                        }
+                        
+                        .reputation-job {
+                            grid-column: 2;
+                            grid-row: 1;
+                        }
+                        
+                        .reputation-ceo {
+                            grid-column: 3;
+                            grid-row: 1;
+                        }
+                        
+                        .reputation-ceo2 {
+                            grid-column: 2/ span 5;
+                            grid-row: 2;
+                        }
+                        /* PHOTO GALLERY STYLING CODE */
+                        
+                        .my-photos {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            gap: 5px;
+                            box-sizing: border-box;
+                        }
+                        
+                        .photos-grid>img {
+                            width: 100%;
+                            max-width: 100%;
+                            opacity: 0.5;
+                        }
+                        
+                        .photos-grid>img:hover {
+                            transform: scale(1.1, 1.1);
+                            transition: .4s;
+                            opacity: 1;
+                        }
+                        
+                        .parent-my-photos {
+                            margin-top: 100px;
+                        }
+                        
+                        .contact {
+                            margin: 150px auto;
+                        }
+                        
+                        .contacts>img {
+                            width: 100%;
+                            max-width: 40px;
+                            float: left;
+                            margin-right: 40px;
+                        }
+                        
+                        .contacts>p {
+                            width: 100%;
+                            padding-top: 1%;
+                            font-size: 23px;
+                        }
+                        
+                        .form {
+                            margin-top: 25%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                        
+                        .form-input {
+                            width: 100%;
+                            height: 50px;
+                            border-radius: 5px;
+                        }
+                        
+                        .form-button {
+                            width: auto;
+                            max-width: 15%;
+                            height: 30px;
+                            margin-left: 5px;
+                            border-radius: 5px;
+                            padding: 5px;
+                        }
+                        
+                        input:focus {
+                            border: 4px solid rgb(104, 155, 75)
+                        }
+                        
+                        footer {
+                            display: flex;
+                            gap: 10px;
+                            justify-content: center;
+                        }
+                        
+                        footer>a {
+                            width: 8%;
+                        }
+                        
+                        footer>a>img {
+                            width: 60%;
+                        }
+                        
+                        .footer>p {
+                            color: #fff;
+                        }
